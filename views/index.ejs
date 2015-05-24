@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel='stylesheet' href='/stylesheets/style.css' />
 		<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
-	    <script src="./libs/jquery-1.11.1.min.js"></script>
-    	<script src="./libs/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="./libs/bootstrap/css/bootstrap-theme.min.css"/>
+		<link rel='stylesheet' href='/stylesheets/style.css'/>
+		<script src="./libs/jquery-1.11.1.min.js"></script>
+		<script src="./libs/jquery-ui.min.js"></script>
+		<script src="./libs/bootstrap/js/bootstrap.min.js"></script>
 		<script src="./javascripts/indexScripts.js"></script>
 	</head>
 	<body>
 		<h1><%=title%></h1>
 		<div id="everything-container">
 			<form id="message-form" action="/codeMessage" method="post">
-				<textarea id="message-text" rows="4" cols="50" placeholder="Enter Message" autofocus form="message-form"></textarea>
-				<button type="submit" id="message-button">Encode</button>
+				<div id="left-message">
+					<div id="message-pills">
+						<ul class="nav nav-pills">
+							<li role="presentation" class="active"><a>Encode</a></li>
+							<li role="presentation"><a>Decode</a></li>
+						</ul>
+					</div>
+					<textarea id="message-text" rows="4" cols="50" placeholder="Enter Message" autofocus form="message-form"></textarea>
+				</div>
+				<div id="right-message">
+					<button type="submit" id="message-button">Encode</button>
+					<div id="returned-message">
+						<p>HI</p>
+					</div>
+				</div>
 			</form>
 		</div>
 	</body>

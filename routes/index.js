@@ -6,8 +6,8 @@ router.get('/', function(req, res) {
 });
 
 router.post('/codeMessage', function(req,res){
-	console.log(req.body);
+	console.log(req.body["message-text"]);
 	res.redirect("./");
-})
+});
 
 module.exports = router;
