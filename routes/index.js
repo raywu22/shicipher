@@ -7,7 +7,6 @@ router.get('/', function(req, res) {
 
 router.post('/codeMessage', function(req,res){
 
-	console.log(req.body);
     var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     
     function randomMap(){
@@ -59,10 +58,14 @@ router.post('/codeMessage', function(req,res){
         }
     }
     */
+    if (req.body.typeCode==="Encode"){
+    	encryptedText = encode(req.body["message-text"], randomMap);
+    }
+    else {
+    	encryptedText = "Not yet implemented"
+    }
+    res.send(encryptedText);
     
-    encryptedText = encode(req.body["message-text"], randomMap);
-    console.log(encryptedText);
-	res.redirect("./");
 });
 
 module.exports = router;

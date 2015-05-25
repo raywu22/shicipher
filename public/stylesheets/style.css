@@ -1,5 +1,6 @@
 body {
 	background-color: #CCCCFF;
+	font-family: 'Play', sans-serif;
 }
 
 h1 {
@@ -7,26 +8,40 @@ h1 {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: 'Play', sans-serif;
 }
 
 #message-pills {
-	margin-left: 15px;
 	margin-bottom: 5px;
 }
 
 #message-text {
-	margin-left: 15px;
 }
 
 #left-message {
  	float: left;
+ 	margin-left: 15px;
+ 	width:46%;
 }
 
 #right-message {
 	float: right;
+	margin-right:15px;
+	width:46%;
 }
 
 #message-button {
-  margin-right: 15px;
+	margin-top:5px;
+}
+
+#returned-message {
+	margin-top: 5px;
+	background-color: #99FFFF;
+	padding-top: 2px;
+	padding-left: 5px;
+	min-height: 207px;
+	border: blue 1px solid;
+}
+
+#message-pills > ul > li{
+	cursor:pointer;
 }
