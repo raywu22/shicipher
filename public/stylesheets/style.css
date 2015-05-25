@@ -12,25 +12,24 @@ h1 {
 
 #message-pills {
 	margin-bottom: 5px;
-}
-
-#message-text {
+	float: left;
 }
 
 #left-message {
  	float: left;
  	margin-left: 15px;
- 	width:46%;
+ 	width:47%;
 }
 
 #right-message {
 	float: right;
 	margin-right:15px;
-	width:46%;
+	width:47%;
 }
 
 #message-button {
 	margin-top:5px;
+	width:80px;
 }
 
 #returned-message {
@@ -43,5 +42,46 @@ h1 {
 }
 
 #message-pills > ul > li{
-	cursor:pointer;
+	cursor: pointer;
+}
+
+#selection-container {
+	float: right;
+	margin-top: 5px;
+	margin-right: 7%;
+}
+
+.dropdown-menu {
+	cursor: pointer;
+}
+
+#dropdownMenu1 {
+	width: 100px;
+}
+
+#key-container {
+	margin-top: 7px;
+}
+
+#calculated-key-container {
+	float: right;
+	background-color: #FFCCCC;
+	width: 300px;
+	height: 34px;
+	margin-top: 5px;
+	border: 1px blue solid;
+	border-radius: 3px;
+	text-align: center;
+	padding-top: 4px;
+}
+
+#key-text {
+	width: 200px;
+}
+
+#key-label {
+	float: right;
+	margin-right: 5px;
+	font-size: 20px;
+	margin-top: 6px;
 }

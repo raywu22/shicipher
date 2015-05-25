@@ -21,10 +21,26 @@
 							<li role="presentation"><a>Decode</a></li>
 						</ul>
 					</div>
+					<div id="selection-container" class="dropdown">
+						<div id="which-selection-container">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">One To One</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation"><a role="menuitem" tabindex="-1">One To One</li>
+								<li role="presentation"><a role="menuitem" tabindex="-1">Special</a></li>
+							</ul>
+						</div>
+						<div id="key-container" class="hidden">
+							<input type="text" placeholder="Enter Key" id="key-text">
+						</div>
+					</div>
 					<textarea id="message-text" rows="10" cols="50" placeholder="Enter Message" autofocus form="message-form"></textarea>
 				</div>
 				<div id="right-message">
 					<button type="submit" id="message-button" class="btn btn-success">Encode</button>
+					<div id="calculated-key-container">
+						<p id="calculated-key-text"></p>
+					</div>
+					<label id="key-label">Key:</label>
 					<div id="returned-message">
 						<p id="returned-text"></p>
 					</div>
